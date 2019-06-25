@@ -499,7 +499,7 @@ int accept_connection(Info_t *Data, int listensock) {
 
 void parse_arguments(int argc, char *argv[], Info_t *Data) {
         int opt;
-        static char usage[] = "usage: %s [-dmp] -f fname [-s sname] name [name ...]\n";
+        static char usage[] = "usage: %s [-d debug] [-l local:port] [-r remote:port] [-s server:port]\n";
 
         Flag.DEBUG = 0;
         Flag.EXIT = 1;
